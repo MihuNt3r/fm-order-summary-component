@@ -1,0 +1,120 @@
+html, body, #fullheight {
+	min-height: 100% !important;
+	height: 100%;
+	font-family: 'Red Hat Display', sans-serif;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+p{
+	font-size: 16px;
+	color: grey;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+	width: 1200px;
+	background-color: hsl(225, 100%, 94%);
+}
+
+.summary{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 600px;
+	border-radius:15px;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0 0 15px -1px #000;
+}
+
+.container .summary img{
+	width: 100%;
+	height: auto;
+}
+
+.container .summary h2{
+	margin: 0;
+	padding: 35px 0 5px;
+	text-align: center;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+
+.container .summary .text p{
+	margin: 0;
+	text-align: center;
+	width: 80%;
+	margin: 10px auto;
+}
+
+.container .summary .current-plan{
+	width: 80%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: rgb(246, 251, 255);
+	margin: 10px auto 25px;
+	border-radius:15px;
+}
+
+.container .summary .current-plan img{
+	margin: 0 15px 0 15px;
+	width: 35px;
+	height: 35px;
+}
+
+.container .summary .current-plan h4{
+	margin: 0 0 5px;
+	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+}
+
+.container .summary .current-plan p{
+	margin: 0;
+}
+
+.container .summary .current-plan a{
+	margin: 0 15px 0 auto;
+	font-weight: bold;
+}
+
+.container .summary .current-plan a:hover{
+	text-decoration: none;
+}
+
+.container .summary button{
+	cursor: pointer;
+	width: 80%;
+	height: 45px;
+	margin: 10px auto;
+	font-weight: bold;
+}
+
+.container .summary .proceed-btn{
+	background-color: hsl(245, 75%, 52%);
+	border: none;
+	border-radius: 10px;
+	color: white;
+}
+
+.container .summary .proceed-btn:hover{
+	background-color: hsl(245, 94%, 65%);
+}
+
+.container .summary .cancel-btn{
+	background:none;
+	border:none;
+	color: grey;
+}
+
+.container .summary .cancel-btn:hover{
+	color: hsl(223, 47%, 23%);
+}
